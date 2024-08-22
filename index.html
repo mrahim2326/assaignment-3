@@ -25,15 +25,63 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="manrope-font">
-  <header>
+  <header class="bg-gradient-to-b from-gray-200 to-gray-50">
     <!--navigation bar-->
-     <nav>
-       <div class="swap-indeterminate"></div>
+     <nav class="flex justify-between items-center py-4 px-4">
+      <!--one-->
+       <div >
+          <button class="text-2xl">
+            <i class="fa-solid bg-green-400 rounded-full p-1 fa-arrow-right"></i>
+            Rinterio
+          </button>
+       </div>
+       <!--tow-->
+       <div>
+        <div class="mx-auto navbar-center hidden lg:flex">
+          <ul class=" grid grid-cols-5 mx-auto text-center">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>Blogs</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+       </div>
+       <!--three-->
+       <div class="flex justify-center
+       items-center">
+       <!--dropdown-->
+       <div>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn m-1 flex sm:hidden">
+            <i class="fa-solid fa-bars  p-2 rounded-full bg-white mx-1"></i>
+           </div>
+          <ul tabindex="0" class="dropdown-content menu  rounded-box ">
+            <li><a>Home</a></li>
+            <li><a>Item 2</a></li>
+          </ul>
+        </div>
+       </div>
+       <!--end-->
+       
+           <div class="mx-auto navbar-center hidden sm:flex">
+            <button>
+              <i class="fa-brands p-2 rounded-full bg-white fa-searchengin"></i>
+             </button>
+             <button>
+              <i class="mx-1 fa-solid bg-white p-2 rounded-full fa-cart-flatbed-suitcase"></i>
+             </button>
+           </div>
+       
+            <div>
+              <button class="bg-green-500 rounded-full p-1 font-extrabold text-xl"> Book Consult<i class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 mx-1"> </i></button> 
+            </div>
+       </div>
      </nav>
      <!--end-->
 
      <!---header area banner-->
-     <div class="mx-6 md:mx-8 lg:mx-16" >
+     <div class="mx-6 py-4 md:mx-8 lg:mx-16" >
       <img class="my-5 m-auto" src="image/banner.png" alt="">
       <h1 class="text-5xl text-center text-[#212121] uppercase font-bold">A barn house of this design has a <br> striking appearance</h1>
       <p class="text-center text-[#494949] my-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
@@ -236,10 +284,10 @@
           <input class="btn bg-white" placeholder="Last name" type="text">
        </div>
        <div class="grid m-3">
-        <input class="btn bg-white" placeholder="Phone number" type="text">
+        <input class="btn bg-white" placeholder="Phone number" type="">
      </div>
      <div class="grid m-3">
-      <input class="btn bg-white" placeholder="email" type="text">
+      <input class="btn bg-white" placeholder="email" type="email">
    </div> 
    <textarea class="md:col-span-2 p-2 rounded-none mx-3 " placeholder="write your message here" name="" id=""></textarea>
          </div>
