@@ -25,7 +25,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="manrope-font">
-  <header class="bg-gradient-to-b from-gray-200 to-gray-50">
+  <header class="lg:px-10 bg-gradient-to-b from-gray-200 to-gray-50">
     <!--navigation bar-->
      <nav class="flex justify-between items-center py-4 px-4">
       <!--one-->
@@ -52,13 +52,17 @@
        items-center">
        <!--dropdown-->
        <div>
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn m-1 flex sm:hidden">
+        <div class="dropdown ">
+          <div tabindex="0" role="button" class="btn mx-2 flex sm:hidden bg-white">
             <i class="fa-solid fa-bars  p-2 rounded-full bg-white mx-1"></i>
            </div>
           <ul tabindex="0" class="dropdown-content menu  rounded-box ">
-            <li><a>Home</a></li>
-            <li><a>Item 2</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">Blogs</a></li>
+              <li><a href="">Contact Us</a></li>
+
           </ul>
         </div>
        </div>
@@ -95,7 +99,7 @@
   </header>
   <main>
     <!--first main section-->
-    <section class="bg-gradient-to-b from-gray-50 to-gray-300 py-4">
+    <section class="lg:px-10 bg-gradient-to-b from-gray-50 to-gray-300 py-4">
        <div class="lg:flex ">
         <!--text and cart-->
         <div>
@@ -141,7 +145,7 @@
     </section>
     <!--end-->
     <!--second section-->
-    <section class="bg-gradient-to-b
+    <section class="lg:px-10 bg-gradient-to-b
      from-gray-300 to-gray-50 py-4">
        <div class="bg-white mx-6 m-auto rounded-lg p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-4">
         <div class="grid justify-center items-center">
@@ -168,7 +172,7 @@
     </section>
     <!--end-->
     <!--third section-->
-    <section class="px-6 bg-gradient-to-b from-gray-100 to-gray-300 py-3">
+    <section class="px-6 lg:px-10 bg-gradient-to-b from-gray-100 to-gray-300 py-3">
       <div class="flex flex-col justify-center items-center">
         <button class="bg-white w-2/5 p-2 rounded-3xl"><i class="fa-solid fa-right-from-bracket p-2 ml-3"></i> How we works</button>
         <h1 class="text-2xl font-bold"> Our Works Process</h1>
@@ -201,7 +205,7 @@
     </section>
     <!--end-->
     <!--fourth section-->
-      <section>
+      <section class="lg:mx-10">
         <!--text-->
         <div class="">
             <div class="flex justify-center my-4">
@@ -211,13 +215,41 @@
           <p class="text-gray-600 text-center py-3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
         <!--grid-->
-         
+         <div class="grid lg:grid-cols-4 grid-rows-2 grid-cols-1     md:grid-cols-2"> 
+          <!--part-->
+          <div class="border-2 p-4 m-4 rounded-xl md:flex md:col-span-2 lg:col-span-3 ">
+            <img src="image/img1.png" alt="">
+            <div class="mx-4">
+              <h1 class="text-2xl py-4"> Commercial</h1>
+            <p class="text-gray-700">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+            <button class="py-4 text-lg font-bold">View Details <i class="fa-solid fa-arrow-right bg-green-400 p-1 rounded-full mx-1"></i> </button>
+            </div>
+          </div>
+          <!--part-->
+          <div class="rounded-xl p-4 m-4 flex justify-center  border-2"><img src="image/img2.png" alt=""></div>
+          <!--part-->
+          <div class="rounded-xl p-4 m-4 flex justify-center  border-2"><img src="image/img3.png" alt=""></div>
+          <!--part-->
+          <div class="border-2 p-4 m-4 rounded-xl md:flex  md:col-span-2">
+            <img src="image/img4.png" alt="">
 
+            <div class="mx-4">
+              <h1 class="text-2xl py-4"> Commercial</h1>
+            <p class="text-gray-700">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+            <button class="py-4 text-lg font-bold">View Details <i class="fa-solid fa-arrow-right bg-green-400 p-1 rounded-full mx-1"></i> </button>
+            </div>
+          </div>
+          <!--part-->
+          <div class="rounded-xl p-4 m-4 flex justify-center  border-2"><img src="image/img5.png" alt=""></div>
+          <!--part-->
+          <div class=" lg:hidden rounded-xl p-4 m-4 flex justify-center  border-2"><img src="image/img3.png" alt=""></div>
+         </div>
+          
       </section>
 
     <!--end-->
       <!--fifth section-->
-      <section>
+      <section class="lg:px-10">
         <div >
           <div class="flex justify-center my-4">
             <button class="p-2 bg-green-300 rounded-3xl font-bold "> <i class="fa-solid fa-right-from-bracket p-2 "></i>Riterio News </button>
@@ -266,7 +298,7 @@
       </section>
       <!--end-->
       <!--sixth section-->
-      <section class=" bg-cover py-6 bg-center md:px-6  h-screen" 
+      <section class=" lg:px-10 bg-cover py-6 bg-center md:px-6  h-screen" 
       style="background-image: url('image/bg.jpg'); ">
         <div class=" md;:px-6">
             <div class=" my-2 flex justify-center items-center">
@@ -297,7 +329,7 @@
       </section>
       <!--end-->
   </main>
-  <footer class="bg-gray-950 py-10">
+  <footer class="bg-gray-950 lg:px-10 py-10">
       <div class="grid py-3 ">
         <button class="text-white font-bold text-3xl my-4 "><i class="fa-solid fa-arrow-right bg-green-500 rounded-full p-1 mx-2"> </i>Rinterio</button>
         <p class="text-gray-300 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
